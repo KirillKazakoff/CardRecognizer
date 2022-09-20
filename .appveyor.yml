@@ -1,5 +1,5 @@
 image: Ubuntu1804 # образ для сборки
-stack: node >14.1.0 # окружение
+stack: node >14.15.0 # окружение
 branches:
   only:
     - master # ветка git
