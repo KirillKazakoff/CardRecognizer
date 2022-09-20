@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 
 beforeAll(async () => {
-    await page.goto('http://localhost:9000/dist/', { waitUntil: 'domcontentloaded' });
+    await page.goto('http://localhost:9002/dist/', { waitUntil: 'domcontentloaded' });
 });
 
 afterEach(async () => {
@@ -19,7 +19,7 @@ it('valid input', async () => {
     await page.waitForSelector('.card__active');
 
     const result = await page.evaluate(
-        () => document.querySelector('.card__active').className,
+        () => document.querySelector('.card__active').className
     );
     const expected = 'card card__visa card__active';
     expect(result).toBe(expected);
