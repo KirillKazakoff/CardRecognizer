@@ -1,11 +1,13 @@
-// eslint-disable-next-line import/prefer-default-export
 export function getRandomInt(min, max) {
     const minInt = Math.ceil(min);
     const maxInt = Math.floor(max);
     return Math.floor(Math.random() * (maxInt - minInt)) + minInt;
 }
 
-export function getCheckDigit(str) {
+export function getCardCheck(value) {
+    const lastDigit = +value[value.length - 1];
+    const str = value.substring(0, value.length - 1);
+
     const { length } = str;
     let sum = 0;
 
@@ -23,8 +25,9 @@ export function getCheckDigit(str) {
 
         sum += digit;
     }
+    const checkDigit = 10 - (sum % 10);
 
-    return 10 - (sum % 10);
+    return checkDigit === lastDigit;
 }
 
 export function getCardCompany(str) {

@@ -1,7 +1,11 @@
-import { getCheckDigit } from '../../lib/utils';
+import { getCardCheck } from '../../lib/utils';
 
-test('return 3', () => {
-    const expected = 3;
-    const result = getCheckDigit('7992739871');
-    expect(result).toBe(expected);
+test('return true', () => {
+    const result = getCardCheck('2200770212727079');
+    expect(result).toBe(true);
+});
+
+test('return false', () => {
+    const result = getCardCheck('2200770212727078');
+    expect(result).toBe(false);
 });

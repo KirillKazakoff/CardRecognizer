@@ -2,24 +2,22 @@ import './form.css';
 import '../card/card.css';
 
 import Cards from '../card/cards';
-import { getCheckDigit, getCardCompany } from '../../lib/utils';
+import { getCardCompany, getCardCheck } from '../../lib/utils';
 
 export default class Form {
     constructor() {
         this.container = document.querySelector('.form');
         this.cards = new Cards('.card__list');
         this.input = this.container.querySelector('.validate__input');
-        this.button = this.container.querySelector('.validate__button');
 
-        this.button.addEventListener('click', () => {
+        this.container.addEventListener('submit', (e) => {
+            e.preventDefault();
+
             const { value } = this.input;
-            const lastDigit = +value[value.length - 1];
-
-            const checkValue = value.substring(0, value.length - 1);
-            const checkDigit = getCheckDigit(checkValue);
-
+            const isCardValid = getCardCheck(value);
             let company = null;
-            if (checkDigit === lastDigit) {
+
+            if (isCardValid) {
                 company = getCardCompany(value);
             } else {
                 const div = document.createElement('div');
