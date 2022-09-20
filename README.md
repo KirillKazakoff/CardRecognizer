@@ -4,6 +4,8 @@
 
 **Ссылка на приложение: [GitHubPages][gitPages]**
 
+[![Build status](https://ci.appveyor.com/api/projects/status/tkm0psa9eadbjg3a?svg=true)](https://ci.appveyor.com/project/KirillKazakoff/credcard)
+
 </br>
 
 ## Алгоритм работы
@@ -13,8 +15,6 @@
 ## Teсты
 
 В директории ./src/app/tests расположены e2e и unit тесты. Server jest-puppeteer работает на 9002 порту. 
-
-[![Build status](https://ci.appveyor.com/api/projects/status/tkm0psa9eadbjg3a?svg=true)](https://ci.appveyor.com/project/KirillKazakoff/credcard)
 
 ## Установка
 Если вы хотите запустить приложение, клонируйте репозиторий, затем установите зависимости
