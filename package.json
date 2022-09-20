@@ -40,5 +40,8 @@
     },
     "dependencies": {
         "core-js": "^3.25.2"
+    },
+    "engines": {
+        "node": "14.1.0"
     }
 }
