@@ -21,6 +21,10 @@
     width: 60%;
 }
 
+.validate__input::placeholder {
+    color: inherit;
+}
+
 .validate__button {
     filter: drop-shadow(1px 1px 1px);
     border: solid 2px thistle;

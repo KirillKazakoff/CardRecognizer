@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 
 beforeAll(async () => {
-    await page.goto(URL, { waitUntil: 'domcontentloaded' });
+    await page.goto('http://localhost:9000/dist/', { waitUntil: 'domcontentloaded' });
 });
 
 afterEach(async () => {
@@ -34,8 +34,6 @@ it('invalid input', async () => {
     submit.click();
 
     await page.waitForSelector('.error');
-    const result = await page.evaluate(
-        () => document.querySelector('.error').className,
-    );
+    const result = await page.evaluate(() => document.querySelector('.error').className);
     expect(result).toBe('error');
 });

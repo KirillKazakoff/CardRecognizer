@@ -2,11 +2,6 @@ module.exports = {
     verbose: false,
     projects: [
         {
-            displayName: 'e2eSrver',
-            // testEnvironment: 'jsDom',
-            testMatch: ['**/tests/e2eServer/*.test.js'],
-        },
-        {
             displayName: 'e2e',
             preset: 'jest-puppeteer',
             globals: {

@@ -1,10 +1,25 @@
 /* user style */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-html, body, p, ul, figure, button, h1, h2, h3, h4, aside, select, textarea, input {
+html,
+body,
+p,
+ul,
+figure,
+button,
+h1,
+h2,
+h3,
+h4,
+aside,
+select,
+textarea,
+input {
     border: none;
     margin: 0;
     padding: 0;
@@ -12,15 +27,18 @@ html, body, p, ul, figure, button, h1, h2, h3, h4, aside, select, textarea, inpu
     resize: none;
     font-weight: normal;
     background-color: unset;
-    /* overflow: hidden; */
 }
 
-select, textarea {
+select,
+textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-select:focus, textarea:focus, button:focus, input:focus {
+select:focus,
+textarea:focus,
+button:focus,
+input:focus {
     outline: none;
 }
 

@@ -8,7 +8,7 @@ module.exports = merge(common, {
     optimization: {
         minimizer: [
             new TerserPlugin({}),
-            new OptimizeCSSAssetsPlugin({}),
+            // new OptimizeCSSAssetsPlugin({}),
         ],
     },
 });

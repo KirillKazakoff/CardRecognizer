@@ -12,10 +12,10 @@ export default class Cards {
         }
         this.activeCard = null;
 
-        const card = this.cards.find((c) => c.className.includes(name));
-        if (card) {
-            card.classList.add('card__active');
-            this.activeCard = card;
+        const foundCard = this.cards.find((card) => card.className.includes(name));
+        if (foundCard) {
+            foundCard.classList.add('card__active');
+            this.activeCard = foundCard;
         }
     }
 }
