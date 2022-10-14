@@ -29,5 +29,5 @@ yarn start
 
 
 
-[GitPages]: https://kirillkazakoff.github.io/credCard/
+[GitPages]: https://kirillkazakoff.github.io/CardRecognizer/
 
