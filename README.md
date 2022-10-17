@@ -2,7 +2,7 @@
 
 Небольшое приложение, которое может опознавать ту или иную платежную систему по номеру карты.
 
-**Ссылка на приложение: [GitHubPages][gitPages]**
+## Ссылка на приложение: [**GitHubPages**][gitPages]
 
 [![Build status](https://ci.appveyor.com/api/projects/status/tkm0psa9eadbjg3a?svg=true)](https://ci.appveyor.com/project/KirillKazakoff/credcard)
 
