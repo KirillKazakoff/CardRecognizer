@@ -2,7 +2,9 @@
 
 Небольшое приложение, которое может опознавать ту или иную платежную систему по номеру карты.
 
-## Ссылка на приложение: [**GitHubPages**][gitPages]
+> ## Ссылка на приложение: [**GitHubPages**][GitHubPages]
+
+</br>
 
 [![Build status](https://ci.appveyor.com/api/projects/status/tkm0psa9eadbjg3a?svg=true)](https://ci.appveyor.com/project/KirillKazakoff/credcard)
 
@@ -28,6 +30,6 @@ yarn start
 ```
 
 
-
-[GitPages]: https://kirillkazakoff.github.io/CardRecognizer/
+<!-- Links -->
+[GitHubPages]: https://kirillkazakoff.github.io/CardRecognizer/
 
